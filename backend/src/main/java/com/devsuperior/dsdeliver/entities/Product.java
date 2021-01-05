@@ -7,12 +7,14 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
+// os produtos correspondem a uma entidade e, será gerenciada pelo JPA
+@Entity 
 @Table(name = "tb_product")
 public class Product implements Serializable {
 	
 	private static final long serialVersionUID = 1L;
 	
+	// instruindo o JPA a mapear o Id como primary key auto increment no banco de dados
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
