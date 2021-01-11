@@ -7,7 +7,6 @@ import { fetchProducts, saveOrder } from "../api";
 import OrderLocation from "./OrderLocation";
 import OrderSummary from "./OrderSummary";
 import Footer from "../Footer";
-import { checkIsSelected } from "./helpers";
 import "./styles.css";
 
 function Orders() {
